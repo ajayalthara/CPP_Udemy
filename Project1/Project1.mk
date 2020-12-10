@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=ajaya
-Date                   :=08/12/2020
+Date                   :=09/12/2020
 CodeLitePath           :=D:/ProgramFiles/CodeLite
 LinkerName             :=D:/ProgramFiles/GCC/mingw64/bin/g++.exe
 SharedObjectLinkerName :=D:/ProgramFiles/GCC/mingw64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := D:/ProgramFiles/GCC/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=D:\ProgramFiles\CodeLite
-Objects0=$(IntermediateDirectory)/exec2.cpp$(ObjectSuffix) $(IntermediateDirectory)/exc1.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/exc1.cpp$(ObjectSuffix) 
 
 
 
@@ -93,12 +93,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/exec2.cpp$(ObjectSuffix): exec2.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/exec2.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/exec2.cpp$(DependSuffix) -MM exec2.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/MyLearnings/GitRepositories/CPP/Project1/exec2.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/exec2.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/exec2.cpp$(PreprocessSuffix): exec2.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/exec2.cpp$(PreprocessSuffix) exec2.cpp
-
 $(IntermediateDirectory)/exc1.cpp$(ObjectSuffix): exc1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/exc1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/exc1.cpp$(DependSuffix) -MM exc1.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/MyLearnings/GitRepositories/CPP/Project1/exc1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/exc1.cpp$(ObjectSuffix) $(IncludePath)
