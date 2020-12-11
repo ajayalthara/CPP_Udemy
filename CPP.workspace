@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CPP" Database="" Version="10000">
   <Project Name="Project1" Path="Project1/Project1.project" Active="No"/>
-  <Project Name="FavNo" Path="Project2/Project2.project" Active="Yes"/>
+  <Project Name="FavNo" Path="Project2/Project2.project" Active="No"/>
+  <Project Name="CarpetCleaningEstimate" Path="CarpetCleaningEstimate/CarpetCleaningEstimate.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="Project1" ConfigName="Debug"/>
       <Project Name="FavNo" ConfigName="Debug"/>
+      <Project Name="CarpetCleaningEstimate" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="Project1" ConfigName="Release"/>
       <Project Name="FavNo" ConfigName="Release"/>
+      <Project Name="CarpetCleaningEstimate" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
